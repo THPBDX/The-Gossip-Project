@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'gossip/gossipid'
+  get 'gossip/:gossipid', to:'gossip#gossipid' 
+
   get '/welcome/:first_name', to: 'welcome#show'
   post '/welcome/:first_name', to: 'welcome#show'
 

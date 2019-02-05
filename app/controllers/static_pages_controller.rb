@@ -4,5 +4,4 @@ class StaticPagesController < ApplicationController
    @user.first_name = params["first_name"]
    @user.save
     end
-
   end
