@@ -1,9 +1,8 @@
 class GossipController < ApplicationController
-  def gossipid (id)
+  def gossipid
     puts "L'ID du gossip :"
-    puts id
-    # puts params["gossipid"]
+    puts params["gossipid"]
     @gossip = Gossip.find(id)
-    # gossipid = params["gossipid"]
+    gossipid = params["gossipid"]
   end
 end
